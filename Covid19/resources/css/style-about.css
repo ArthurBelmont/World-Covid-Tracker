@@ -1,0 +1,175 @@
+
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/*                  LOAD FONTS                    */
+/* ---------------------------------------------- */
+@font-face{
+    font-family: 'Gilroy';
+    src: url(./Gilroy-Regular.woff) format(woff);
+}
+/* ---------------------------------------------- */
+/*                    GENERAL                     */
+/* ---------------------------------------------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+.hide{
+    display: none;
+}
+.fadeIn{
+    animation: fade 0.5s ease-in-out;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* ---------------------------------------------- */
+/*                    HEADER                      */
+/* ---------------------------------------------- */
+
+header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1200px;
+    width: 100%;
+    height: 65px;
+
+    margin: 0 auto;
+
+    background-color: #F3F2F2;
+}
+
+/* -------- LOGO -------- */
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    
+    
+}
+.logo img{
+    width: 60px;
+}
+.logo p {
+    font-weight: bold;
+    color: #5af0be;
+}
+/* -------- NAV -------- */
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li:last-child{
+    padding-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #5af0be;
+    padding: 10px;
+    font-weight: bold;
+}
+/* ---------------------------------------------- */
+/*                      MAIN                      */
+/* ---------------------------------------------- */
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+/* -------- BG IMAGE -------- */
+
+
+body{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(122, 54, 143, 0.548), #641bdb) ,url('../img/bdcovid.jpg');
+    background-size: cover;
+}
+
+/* ---------------------------------------------- */
+/*                    FOOTER                      */
+/* ---------------------------------------------- */
+footer{
+    
+    max-width: 1200px;
+    height: 60px;
+
+    margin: 0 auto;
+    background-color: #5af0be;
+}
+
+.footer-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copyright small{
+    color: #FFF;
+    font-weight: bold;
+
+}
+
+/* ---------------------------------------------- */
+/*             SCREEN WIDTH < 600px               */
+/* ---------------------------------------------- */
+@media screen and (max-width: 600px){
+    .latest-report{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/* ---------------------------------------------- */
+        /*             Banner               */
+/* ---------------------------------------------- */
+
+#banner{
+
+    position: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+
+}
+
+/* Large rounded green border */
+hr {
+    border: 7px solid #5af0be;
+    border-radius: 5px;
+    width:75%;
+    margin: 15px;
+}
+
+p{
+    color: #FFF;
+}
